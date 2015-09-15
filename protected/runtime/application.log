@@ -573,3 +573,188 @@ REQUEST_URI=/YiiOne/index.php?r=site/index
 in D:\Ampps\www\YiiOne\index.php (29)
 2015/09/10 13:08:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.post' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `post`.
 in D:\Ampps\www\YiiOne\index.php (29)
+2015/09/10 14:06:41 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.import" is not defined.' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Ampps\www\YiiOne\framework\base\CModule.php(105): CComponent->__get('import')
+#1 D:\Ampps\www\YiiOne\index.php(18): CModule->__get('import')
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:10:41 [error] [php] Missing argument 1 for CModule::getComponent(), called in D:\Ampps\www\YiiOne\framework\base\CComponent.php on line 111 and defined (D:\Ampps\www\YiiOne\framework\base\CModule.php:382)
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(18): CWebApplication->__get()
+REQUEST_URI=/YiiOne/index.php
+in D:\Ampps\www\YiiOne\index.php (18)
+2015/09/10 14:10:56 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.import" is not defined.' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Ampps\www\YiiOne\framework\base\CModule.php(105): CComponent->__get('import')
+#1 D:\Ampps\www\YiiOne\index.php(18): CModule->__get('import')
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:25:59 [error] [exception.CException] exception 'CException' with message 'CList and its behaviors do not have a method or closure named "setReadOnly".' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(27): CComponent->__call('setReadOnly', Array)
+#1 D:\Ampps\www\YiiOne\index.php(27): CList->setReadOnly(true)
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:26:33 [error] [exception.CException] exception 'CException' with message 'CList and its behaviors do not have a method or closure named "setReadOnly".' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(27): CComponent->__call('setReadOnly', Array)
+#1 D:\Ampps\www\YiiOne\index.php(27): CList->setReadOnly(true)
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:28:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.post' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Post`.
+in D:\Ampps\www\YiiOne\index.php (20)
+2015/09/10 14:28:36 [error] [exception.CDbException] exception 'CDbException' with message 'The table "Post" for active record class "Post" cannot be found in the database.' in D:\Ampps\www\YiiOne\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 D:\Ampps\www\YiiOne\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Post))
+#1 D:\Ampps\www\YiiOne\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 D:\Ampps\www\YiiOne\index.php(20): CActiveRecord->__construct()
+#3 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:33:24 [error] [php] include(Task.php): failed to open stream: No such file or directory (D:\Ampps\www\YiiOne\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(21): spl_autoload_call()
+REQUEST_URI=/YiiOne/index.php
+in D:\Ampps\www\YiiOne\index.php (21)
+2015/09/10 14:37:44 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getUrl".' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(18): CComponent->__call('getUrl', Array)
+#1 D:\Ampps\www\YiiOne\index.php(18): CWebApplication->getUrl()
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:51:03 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getUrl".' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(19): CComponent->__call('getUrl', Array)
+#1 D:\Ampps\www\YiiOne\index.php(19): CWebApplication->getUrl()
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:51:17 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "getUrl".' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(19): CComponent->__call('getUrl', Array)
+#1 D:\Ampps\www\YiiOne\index.php(19): CWebApplication->getUrl()
+#2 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/10 14:56:15 [error] [exception.CException] exception 'CException' with message 'Property "CCookieCollection.value" is not defined.' in D:\Ampps\www\YiiOne\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Ampps\www\YiiOne\index.php(25): CComponent->__get('value')
+#1 {main}
+REQUEST_URI=/YiiOne/index.php
+---
+2015/09/15 09:39:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in D:\Ampps\www\YiiOne\index.php (43)
+2015/09/15 09:39:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in D:\Ampps\www\YiiOne\index.php (43)
+2015/09/15 01:40:49 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE '{{post}}' (
+	"id" int(10) unsigned NOT NULL auto_increment,
+	"created_on" int(11) unsigned NOT NULL,
+	"title" varchar(255) NOT NULL,
+	"content`" text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+2015/09/15 01:40:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "unsigned": syntax error. The SQL statement executed was: CREATE TABLE '{{post}}' (
+	"id" int(10) unsigned NOT NULL auto_increment,
+	"created_on" int(11) unsigned NOT NULL,
+	"title" varchar(255) NOT NULL,
+	"content`" text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8.
+2015/09/15 01:40:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "unsigned": syntax error. The SQL statement executed was: CREATE TABLE '{{post}}' (
+	"id" int(10) unsigned NOT NULL auto_increment,
+	"created_on" int(11) unsigned NOT NULL,
+	"title" varchar(255) NOT NULL,
+	"content`" text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8' in D:\Ampps\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\Ampps\www\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 D:\Ampps\www\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('{{post}}', Array, 'ENGINE=InnoDB D...')
+#2 D:\Ampps\www\YiiOne\protected\migrations\m150915_011130_create_post_table.php(13): CDbMigration->createTable('{{post}}', Array, 'ENGINE=InnoDB D...')
+#3 D:\Ampps\www\yii\framework\cli\commands\MigrateCommand.php(415): m150915_011130_create_post_table->up()
+#4 D:\Ampps\www\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m150915_011130_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\Ampps\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\Ampps\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\Ampps\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\Ampps\www\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 D:\Ampps\www\yii\framework\yiic.php(33): CApplication->run()
+#11 D:\Ampps\www\YiiOne\protected\yiic.php(7): require_once('D:\\Ampps\\www\\yi...')
+#12 {main}
+---
+2015/09/15 01:43:26 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE '{{post}}' (
+	"id" int(10) unsigned NOT NULL auto_increment,
+	"created_on" int(11) unsigned NOT NULL,
+	"title" varchar(255) NOT NULL,
+	"content`" text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+2015/09/15 01:43:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "unsigned": syntax error. The SQL statement executed was: CREATE TABLE '{{post}}' (
+	"id" int(10) unsigned NOT NULL auto_increment,
+	"created_on" int(11) unsigned NOT NULL,
+	"title" varchar(255) NOT NULL,
+	"content`" text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8.
+2015/09/15 01:43:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "unsigned": syntax error. The SQL statement executed was: CREATE TABLE '{{post}}' (
+	"id" int(10) unsigned NOT NULL auto_increment,
+	"created_on" int(11) unsigned NOT NULL,
+	"title" varchar(255) NOT NULL,
+	"content`" text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8' in D:\Ampps\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\Ampps\www\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 D:\Ampps\www\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('{{post}}', Array, 'ENGINE=InnoDB D...')
+#2 D:\Ampps\www\YiiOne\protected\migrations\m150915_011130_create_post_table.php(13): CDbMigration->createTable('{{post}}', Array, 'ENGINE=InnoDB D...')
+#3 D:\Ampps\www\yii\framework\cli\commands\MigrateCommand.php(415): m150915_011130_create_post_table->up()
+#4 D:\Ampps\www\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m150915_011130_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\Ampps\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\Ampps\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\Ampps\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\Ampps\www\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 D:\Ampps\www\yii\framework\yiic.php(33): CApplication->run()
+#11 D:\Ampps\www\YiiOne\protected\yiic.php(7): require_once('D:\\Ampps\\www\\yi...')
+#12 {main}
+---
+2015/09/15 01:46:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2015/09/15 01:46:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8' at line 5. The SQL statement executed was: CREATE TABLE `{{post}}` (
+	`id` int(10) unsigned NOT NULL auto_increment,
+	`created_on` int(11) unsigned NOT NULL,
+	`title` varchar(255) NOT NULL,
+	`content`` text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8.
+2015/09/15 01:46:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8' at line 5. The SQL statement executed was: CREATE TABLE `{{post}}` (
+	`id` int(10) unsigned NOT NULL auto_increment,
+	`created_on` int(11) unsigned NOT NULL,
+	`title` varchar(255) NOT NULL,
+	`content`` text NOT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8' in D:\Ampps\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\Ampps\www\yii\framework\db\CDbCommand.php(1352): CDbCommand->execute()
+#1 D:\Ampps\www\yii\framework\db\CDbMigration.php(250): CDbCommand->createTable('{{post}}', Array, 'ENGINE=InnoDB D...')
+#2 D:\Ampps\www\YiiOne\protected\migrations\m150915_011130_create_post_table.php(13): CDbMigration->createTable('{{post}}', Array, 'ENGINE=InnoDB D...')
+#3 D:\Ampps\www\yii\framework\cli\commands\MigrateCommand.php(415): m150915_011130_create_post_table->up()
+#4 D:\Ampps\www\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m150915_011130_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 D:\Ampps\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 D:\Ampps\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 D:\Ampps\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 D:\Ampps\www\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#10 D:\Ampps\www\yii\framework\yiic.php(33): CApplication->run()
+#11 D:\Ampps\www\YiiOne\protected\yiic.php(7): require_once('D:\\Ampps\\www\\yi...')
+#12 {main}
+---
+2015/09/15 01:47:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2015/09/15 01:48:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiione.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.

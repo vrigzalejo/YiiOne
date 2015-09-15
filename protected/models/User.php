@@ -1,22 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "post".
+ * This is the model class for table "user".
  *
- * The followings are the available columns in table 'post':
+ * The followings are the available columns in table 'user':
  * @property string $id
- * @property string $created_on
- * @property string $title
- * @property string $content
+ * @property string $username
+ * @property string $password
  */
-class Post extends CActiveRecord
+class User extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'post';
+		return 'user';
 	}
 
 	/**
@@ -27,12 +26,12 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('created_on, title, content', 'required'),
-			array('created_on', 'length', 'max'=>11),
-			array('title', 'length', 'max'=>255),
+			array('username, password', 'required'),
+			array('username', 'length', 'max'=>200),
+			array('password', 'length', 'max'=>40),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, created_on, title, content', 'safe', 'on'=>'search'),
+			array('id, username, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,9 +53,8 @@ class Post extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'created_on' => 'Created On',
-			'title' => 'Title',
-			'content' => 'Content',
+			'username' => 'Username',
+			'password' => 'Password',
 		);
 	}
 
@@ -79,9 +77,8 @@ class Post extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
-		$criteria->compare('created_on',$this->created_on,true);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('content',$this->content,true);
+		$criteria->compare('username',$this->username,true);
+		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -92,7 +89,7 @@ class Post extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Post the static model class
+	 * @return User the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

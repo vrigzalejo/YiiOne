@@ -15,9 +15,23 @@ $config = CMap::mergeArray(
 
 //Yii::createWebApplication($config)->run();
 $app = Yii::createWebApplication( $config );
+/*
+var_dump(Yii::app()->db);
+$request = Yii::app()->request;
+echo '<br /><br />';
+$cookie = $request->cookies['test'];
+if($cookie) {
+    // printing cookie value
+    echo $cookie->value;
+} else {
+    $cookie = new CHttpCookie('test', 'I am a cookie!');
+    $request->cookies['test'] = $cookie;
+}*/
+
+
 
 // attaching a handler to application start
-Yii::app()->onBeginRequest = function ( $event ) {
+/*Yii::app()->onBeginRequest = function ( $event ) {
     // starting output buffering with gzip handler
     return ob_start( 'ob_gzhandler' );
 };
@@ -25,5 +39,6 @@ Yii::app()->onBeginRequest = function ( $event ) {
 Yii::app()->onEndRequest = function ( $event ) {
     // releasing output buffer
     return ob_end_flush();
-};
+};*/
 $app->run();
+
